@@ -1,0 +1,52 @@
+body{
+    background-color: #ADD8E6;
+    text-align: center;
+    
+
+}
+h1,h2{
+    color: white;
+    font-weight: bold;
+    font-weight: 900;
+}
+#game{
+    display: inline-block;
+    text-align: center;
+    background-color: royalblue;
+    border: 3px solid #191970;
+}
+.col{
+    width: 75px;
+    height: 75px;
+    border: solid #191970 2px;
+    border-radius: 50%;
+    background-color:#B0C4DE;
+    margin: 2px;
+    display: inline-block;
+}
+.col.empty{
+    cursor: pointer;
+    cursor: crosshair;
+
+}
+h1{
+    border : solid #191970 1px;
+    border-radius: 10px;
+    background-color: #191970;
+}
+#restart{
+    border-radius: 10px;
+}
+/* animation lors de la tombée du jeton */
+.fall {
+    animation-name: fall-animation;
+    animation-duration: 300ms;
+}
+@keyframes fall-animation {
+    from {
+        transform: translateY(-500px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
